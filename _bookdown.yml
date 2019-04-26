@@ -1,0 +1,3 @@
+book_filename: "LDASupplements"
+output_dir: "docs"
+rmd_files: ["index.Rmd","Chapters/Chapter1.Rmd","Chapters/Chapter2.Rmd"]

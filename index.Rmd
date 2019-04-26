@@ -1,0 +1,15 @@
+--- 
+title: "Table of Distributions for LDA"
+author: "Jake Thornton"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "Table of distributions for the Loss Data Analytics online text."
+---
+
+#Preface {-}
+
+It is important to us that the read has accessible resources that can support their learning when using the *Loss Data Analytics* book. *Table of Distributions for LDA* aims to assist readers by providing them with distributions used commonly throughout the book. The distributions detailed in this resource represent all of the distributions from the Exam C tables as well as a few other commonly used distributions. In addition to this, each distribution has been graphed and its corresponding density, distribution, quantile, and random function in R.
