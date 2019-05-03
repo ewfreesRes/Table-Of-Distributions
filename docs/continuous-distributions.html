@@ -25,7 +25,7 @@
 <meta name="author" content="Jake Thornton">
 
 
-<meta name="date" content="2019-04-26">
+<meta name="date" content="2019-05-03">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -220,12 +220,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
 <li class="chapter" data-level="1" data-path="continuous-distributions.html"><a href="continuous-distributions.html"><i class="fa fa-check"></i><b>1</b> Continuous Distributions</a><ul>
-<li class="chapter" data-level="1.1" data-path="continuous-distributions.html"><a href="continuous-distributions.html#three-parameter-distributions"><i class="fa fa-check"></i><b>1.1</b> Three Parameter Distributions</a></li>
-<li class="chapter" data-level="1.2" data-path="continuous-distributions.html"><a href="continuous-distributions.html#two-parameter-distributions"><i class="fa fa-check"></i><b>1.2</b> Two Parameter Distributions</a></li>
-<li class="chapter" data-level="1.3" data-path="continuous-distributions.html"><a href="continuous-distributions.html#one-parameter-distributions"><i class="fa fa-check"></i><b>1.3</b> One Parameter Distributions</a></li>
-<li class="chapter" data-level="1.4" data-path="continuous-distributions.html"><a href="continuous-distributions.html#other-distributions"><i class="fa fa-check"></i><b>1.4</b> Other distributions</a></li>
-<li class="chapter" data-level="1.5" data-path="continuous-distributions.html"><a href="continuous-distributions.html#distributions-with-finite-support"><i class="fa fa-check"></i><b>1.5</b> Distributions with Finite Support</a></li>
-<li class="chapter" data-level="1.6" data-path="continuous-distributions.html"><a href="continuous-distributions.html#limited-expected-values"><i class="fa fa-check"></i><b>1.6</b> Limited Expected Values</a></li>
+<li class="chapter" data-level="1.1" data-path="continuous-distributions.html"><a href="continuous-distributions.html#four-parameter-distributions"><i class="fa fa-check"></i><b>1.1</b> Four Parameter Distributions</a></li>
+<li class="chapter" data-level="1.2" data-path="continuous-distributions.html"><a href="continuous-distributions.html#three-parameter-distributions"><i class="fa fa-check"></i><b>1.2</b> Three Parameter Distributions</a></li>
+<li class="chapter" data-level="1.3" data-path="continuous-distributions.html"><a href="continuous-distributions.html#two-parameter-distributions"><i class="fa fa-check"></i><b>1.3</b> Two Parameter Distributions</a></li>
+<li class="chapter" data-level="1.4" data-path="continuous-distributions.html"><a href="continuous-distributions.html#one-parameter-distributions"><i class="fa fa-check"></i><b>1.4</b> One Parameter Distributions</a></li>
+<li class="chapter" data-level="1.5" data-path="continuous-distributions.html"><a href="continuous-distributions.html#other-distributions"><i class="fa fa-check"></i><b>1.5</b> Other distributions</a></li>
+<li class="chapter" data-level="1.6" data-path="continuous-distributions.html"><a href="continuous-distributions.html#distributions-with-finite-support"><i class="fa fa-check"></i><b>1.6</b> Distributions with Finite Support</a></li>
+<li class="chapter" data-level="1.7" data-path="continuous-distributions.html"><a href="continuous-distributions.html#limited-expected-values"><i class="fa fa-check"></i><b>1.7</b> Limited Expected Values</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="discrete-distributions.html"><a href="discrete-distributions.html"><i class="fa fa-check"></i><b>2</b> Discrete Distributions</a><ul>
 <li class="chapter" data-level="2.1" data-path="discrete-distributions.html"><a href="discrete-distributions.html#ab0-class-distributions"><i class="fa fa-check"></i><b>2.1</b> (a,b,0) Class Distributions</a></li>
@@ -255,26 +256,86 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1><span class="header-section-number">1</span> Continuous Distributions</h1>
 <p><strong>Chapter Preview</strong>.</p>
 <p>This table of distributions is a summary of selected continuous probability distributions used throughout <em>Loss Data Analytics</em>.</p>
-<div id="three-parameter-distributions" class="section level2">
-<h2><span class="header-section-number">1.1</span> Three Parameter Distributions</h2>
+<div id="four-parameter-distributions" class="section level2">
+<h2><span class="header-section-number">1.1</span> Four Parameter Distributions</h2>
 </center>
 <div class="tab">
-<button class="tablinks" onclick="openTab(event, '3pA')">
+<button class="tablinks" onclick="openTab(event, '4pA')">
 GB2
 </button>
-<button class="tablinks" onclick="openTab(event, '3pB')">
-Beta
-</button>
-<button class="tablinks" onclick="openTab(event, '3pC')">
-Inv Beta
-</button>
 </div>
-<div id="3pA" class="tabcontent">
+<div id="4pA" class="tabcontent">
 <span class="topright" onclick="this.parentElement.style.display=&#39;none&#39;">Hide</span>
 <h3>
 GB2
 </h3>
 <p>
+<p>GB2 Functions</p>
+<p><span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Name} &amp; \text{Function} \\
+\hline
+  \text{Parameter Assumptions} &amp; \beta&gt;0 \\
+\hline
+  \text{Probability Density Function} &amp; \frac{a*x^{a*\alpha-1}}{b^{a*\alpha} B(\alpha,\beta)\Big[1+(x/b)^a\Big]^{\alpha+\beta}} \\
+    \text{f(x)} &amp; \\
+\hline
+  \textit{k}^{th}~\text{Raw Moment} &amp; \frac{b^k\Big(\alpha+\frac{k}{a},\beta-\frac{k}{a}\Big)}{(\alpha,\beta)} \\
+  \mathrm{E}[X^k]  &amp; \textit{k}&gt;0 \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]</span></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">alpha=<span class="dv">3</span>
+tau=<span class="dv">5</span>
+theta=<span class="dv">100</span>
+X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">1</span>)
+<span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dgenpareto</span>(X,<span class="dt">shape1=</span>alpha,<span class="dt">shape2=</span>tau,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Generalized Pareto Distribution&quot;</span>)</code></pre></div>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>GB2 R Commands</p>
+<p><span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} &amp; \text{dgenpareto}(x=, shape1=\alpha, shape2=\tau, scale=\theta) \\
+\hline
+  \text{Distribution Function} &amp; \text{pgenpareto}(q=, shape1=\alpha, shape2=\tau, scale=\theta) \\
+\hline
+  \text{Quantile Function} &amp; \text{qgenpareto}(p=, shape1=\alpha, shape2=\tau, scale=\theta) \\ 
+\hline
+  \text{Random Sampling Function} &amp; \text{rgenpareto}(r=, shape1=\alpha, shape2=\tau, scale=\theta) \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]</span></p>
+</div>
+<div id="three-parameter-distributions" class="section level2">
+<h2><span class="header-section-number">1.2</span> Three Parameter Distributions</h2>
+</center>
+<div class="tab">
+<button class="tablinks" onclick="openTab(event, '3pA')">
+Generalized Pareto
+</button>
+<button class="tablinks" onclick="openTab(event, '3pB')">
+Burr
+</button>
+<button class="tablinks" onclick="openTab(event, '3pC')">
+Inv Burr
+</button>
+</div>
+<div id="3pA" class="tabcontent">
+<span class="topright" onclick="this.parentElement.style.display=&#39;none&#39;">Hide</span>
+<h3>
+Generalized Pareto
+</h3>
+<p>
+<p>Generalized Pareto Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -304,8 +365,9 @@ GB2
 tau=<span class="dv">5</span>
 theta=<span class="dv">100</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">1</span>)
-<span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dgenpareto</span>(X,<span class="dt">shape1=</span>alpha,<span class="dt">shape2=</span>tau,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;GB2 Distribution&quot;</span>)</code></pre></div>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dgenpareto</span>(X,<span class="dt">shape1=</span>alpha,<span class="dt">shape2=</span>tau,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Generalized Pareto Distribution&quot;</span>)</code></pre></div>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Generalized Pareto R Commands</p>
 <span class="math display">\[
 {\small
 \begin{matrix}
@@ -331,6 +393,7 @@ X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</s
 Burr
 </h3>
 <p>
+<p>Burr Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -361,7 +424,8 @@ gamma=<span class="dv">3</span>
 theta=<span class="dv">100</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dburr</span>(X,<span class="dt">shape1=</span>alpha,<span class="dt">shape2=</span>gamma,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Burr Distribution&quot;</span>)</code></pre></div>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Burr R Commands</p>
 <span class="math display">\[
 {\small
 \begin{matrix}
@@ -387,6 +451,7 @@ X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</s
 Inv Burr
 </h3>
 <p>
+<p>Inverse Burr Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -417,7 +482,8 @@ tau=<span class="dv">3</span>
 theta=<span class="dv">100</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dinvburr</span>(X,<span class="dt">shape1=</span>alpha,<span class="dt">shape2=</span>tau,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inv Burr Distribution&quot;</span>)</code></pre></div>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>Inverse Burr R Commands</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -439,7 +505,7 @@ X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</s
 </div>
 </div>
 <div id="two-parameter-distributions" class="section level2">
-<h2><span class="header-section-number">1.2</span> Two Parameter Distributions</h2>
+<h2><span class="header-section-number">1.3</span> Two Parameter Distributions</h2>
 </center>
 <div class="tab">
 <button class="tablinks" onclick="openTab(event, '2pA')">
@@ -466,6 +532,12 @@ Weibull
 <button class="tablinks" onclick="openTab(event, '2pH')">
 Inv Weibull
 </button>
+<button class="tablinks" onclick="openTab(event, '2pI')">
+Uniform
+</button>
+<button class="tablinks" onclick="openTab(event, '2pJ')">
+Normal
+</button>
 </div>
 <div id="2pA" class="tabcontent">
 <span class="topright" onclick="this.parentElement.style.display=&#39;none&#39;">Hide</span>
@@ -473,6 +545,7 @@ Inv Weibull
 Pareto
 </h3>
 <p>
+<p>Pareto Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -507,7 +580,8 @@ Pareto
 theta=<span class="dv">200</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dpareto2</span>(X,<span class="dt">shape=</span>alpha,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Pareto Distribution&quot;</span>)</code></pre></div>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>Pareto R Commands</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -533,6 +607,7 @@ X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</s
 Inv Pareto
 </h3>
 <p>
+<p>Inverse Pareto Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -560,7 +635,8 @@ Inv Pareto
 theta=<span class="dv">100</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">3000</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dinvpareto</span>(X,<span class="dt">shape=</span>tau,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inv Pareto Distribution&quot;</span>)</code></pre></div>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>Inverse Pareto R Commands</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -586,6 +662,7 @@ X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</s
 Loglogistic
 </h3>
 <p>
+<p>Loglogistic Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -620,6 +697,7 @@ Loglogistic
 Paralogistic
 </h3>
 <p>
+<p>Paralogistic Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -649,8 +727,8 @@ Paralogistic
 theta=<span class="dv">100</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dparalogis</span>(X,<span class="dt">shape=</span>alpha,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Paralogistic Distribution&quot;</span>)</code></pre></div>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
-<p><span class="math display">\[
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>Paralogistic R Commands <span class="math display">\[
 {\small
 \begin{matrix}
 \begin{array}{l|c}
@@ -675,6 +753,7 @@ X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</s
 Gamma
 </h3>
 <p>
+<p>Gamma Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -704,7 +783,8 @@ Gamma
 theta=<span class="dv">50</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dgamma</span>(X,<span class="dt">shape=</span>alpha,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Gamma Distribution&quot;</span>)</code></pre></div>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>Gamma R Commands</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -730,6 +810,7 @@ X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</s
 Inv Gamma
 </h3>
 <p>
+<p>Inverse Gamma Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -757,7 +838,8 @@ Inv Gamma
 theta=<span class="dv">100</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">400</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dinvgamma</span>(X,<span class="dt">shape=</span>alpha,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inv Gamma Distribution&quot;</span>)</code></pre></div>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p>Gamma R Commands</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -783,6 +865,7 @@ X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</s
 Weibull
 </h3>
 <p>
+<p>Weibull Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -812,7 +895,8 @@ Weibull
 theta=<span class="dv">100</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dweibull</span>(X,<span class="dt">shape=</span>tau, <span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Weibull Distribution&quot;</span>)</code></pre></div>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>Weibull R Commands</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -838,6 +922,7 @@ X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</s
 Inv Weibull
 </h3>
 <p>
+<p>Inverse Weibull Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -865,7 +950,8 @@ Inv Weibull
 theta=<span class="dv">100</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dinvweibull</span>(X,<span class="dt">shape=</span>tau,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inv Weibull Distribution&quot;</span>)</code></pre></div>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p>Inverse Weibull R Commands</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -885,9 +971,177 @@ X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</s
 \]</span></p>
 </p>
 </div>
+<div id="2pI" class="tabcontent">
+<span class="topright" onclick="this.parentElement.style.display=&#39;none&#39;">Hide</span>
+<h3>
+Uniform
+</h3>
+<p>
+<p>Uniform Functions</p>
+<p><span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Name} &amp; \text{Function} \\
+\hline
+  \text{Parameter Assumptions} &amp; -\infty&lt;\alpha&lt;\beta&lt;\infty \\
+\hline
+  \text{Probability Density Function} &amp; \frac{1}{\beta-\alpha} \\
+  \text{f(x)} &amp; \\
+\hline
+  \text{Cumulative Distribution Function} &amp; \frac{x-\alpha}{\beta-\alpha} \\
+  \text{F(x)} &amp; \\
+\hline
+  \text{Mean} &amp; \frac{\beta+\alpha}{2} \\
+  \text{E[X]} &amp; \\
+\hline
+  \text{Variance} &amp; \frac{(\beta-\alpha)^2}{12} \\
+  E[(X-\mu)^2] &amp; \\
+\hline
+  \mathrm{E}[(X-\mu)^k] &amp; \mu_k=0~~~\text{for odd }\textit{k} \\
+   &amp; \mu_k=\frac{(\beta-\alpha)^k}{2^k (k+1)}~~~\text{for even }\textit{k} \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]</span></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">alpha=<span class="dv">50</span>
+beta=<span class="dv">100</span>
+X=<span class="kw">seq</span>(alpha,beta,<span class="dv">1</span>)
+<span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dunif</span>(X,alpha,beta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Continous Uniform Distribution&quot;</span>)</code></pre></div>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p>Uniform R Commands</p>
+<p><span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} &amp; \text{dunif}(x=, min=a, max=b) \\
+\hline
+  \text{Distribution Function} &amp; \text{punif}(p=, min=a, max=b) \\
+\hline
+  \text{Quantile Function} &amp; \text{qunif}(q=, min=a, max=b) \\ 
+\hline
+  \text{Random Sampling Function} &amp; \text{runif}(n=, min=a, max=b) \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]</span></p>
+</p>
+</div>
+<div id="2pJ" class="tabcontent">
+<span class="topright" onclick="this.parentElement.style.display=&#39;none&#39;">Hide</span>
+<h3>
+Normal
+</h3>
+<p>
+<p>Normal Functions</p>
+<p><span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Name} &amp; \text{Function} \\
+\hline
+  \text{Parameter Assumptions} &amp; -\infty&lt;\mu&lt;\infty,~\sigma&gt;0 \\
+\hline
+  \text{Probability Density Function} &amp; \frac{1}{\sqrt{2\pi}\sigma} \exp\left( -\frac{(x-\mu)^2}{2\sigma^2}\right) \\
+  \text{f(x)} &amp; \\
+\hline
+  \text{Cumulative Distribution Function} &amp; \Phi\left(\frac{x-\mu}{\sigma}\right) \\
+  \text{F(x)} &amp; \\
+\hline
+  \text{Mean} &amp; \mu \\
+  \text{E[X]} &amp; \\
+\hline
+  \text{Variance} &amp; \sigma^2 \\
+  E[(X-\mu)^2] &amp; \\
+\hline
+  \mathrm{E}[(x-\mu)^k] &amp; \mu_k=0~~~\text{for even k} \\
+   &amp; \mu_k=\frac{k!\sigma^2}{(\frac{k}{2})! 2^{k/2}}~~~\text{for odd k} \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]</span></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mu=<span class="dv">100</span>
+sigma=<span class="dv">10</span>
+X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">200</span>,<span class="dt">by=</span><span class="dv">1</span>)
+<span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dnorm</span>(X,<span class="dt">mean=</span>mu,<span class="dt">sd=</span>sigma),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Normal Distribution&quot;</span>)</code></pre></div>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p>Normal R Commands</p>
+<p><span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} &amp; \text{dnorm}(x=, mean=\mu, sd=\sigma) \\
+\hline
+  \text{Distribution Function} &amp; \text{pnorm}(p=, mean=\mu, sd=\sigma) \\
+\hline
+  \text{Quantile Function} &amp; \text{qnorm}(q=, mean=\mu, sd=\sigma) \\ 
+\hline
+  \text{Random Sampling Function} &amp; \text{rnorm}(n=, mean=\mu, sd=\sigma) \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]</span></p>
+</p>
+</div>
+<div id="2pK" class="tabcontent">
+<span class="topright" onclick="this.parentElement.style.display=&#39;none&#39;">Hide</span>
+<h3>
+Cauchy
+</h3>
+<p>
+<p>Cauchy Functions</p>
+<p><span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Name} &amp; \text{Function} \\
+\hline
+  \text{Parameter Assumptions} &amp; -\infty &lt;\alpha &lt;\infty, \beta&gt;0 \\
+\hline
+  \text{Probability Density Function} &amp; \frac{1}{\pi\beta}[1+\left( \frac{x-\alpha}{\beta}\right)^2]^{-1} \\
+    \text{f(x)} &amp; \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]</span></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">alpha=<span class="dv">50</span>
+beta=<span class="dv">100</span>
+X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">1</span>)
+<span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dcauchy</span>(X,<span class="dt">location=</span>alpha,<span class="dt">scale=</span>beta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Cauchy Distribution&quot;</span>)</code></pre></div>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p>Cauchy R Commands</p>
+<span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} &amp; \text{dcauchy}(x=, location=\alpha, scale=\beta) \\
+\hline
+  \text{Distribution Function} &amp; \text{pcauchy}(p=, location=\alpha, scale=\beta) \\
+\hline
+  \text{Quantile Function} &amp; \text{qcauchy}(q=, location=\alpha, scale=\beta) \\ 
+\hline
+  \text{Random Sampling Function} &amp; \text{rcauchy}(n=, location=\alpha, scale=\beta) \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]</span>
+</p>
+</div>
 </div>
 <div id="one-parameter-distributions" class="section level2">
-<h2><span class="header-section-number">1.3</span> One Parameter Distributions</h2>
+<h2><span class="header-section-number">1.4</span> One Parameter Distributions</h2>
 </center>
 <div class="tab">
 <button class="tablinks" onclick="openTab(event, '1pA')">
@@ -903,6 +1157,7 @@ Inv Exponential
 Exponential
 </h3>
 <p>
+<p>Exponential Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -933,7 +1188,8 @@ Exponential
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">theta=<span class="dv">100</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dexp</span>(X,<span class="dt">rate=</span><span class="dv">1</span><span class="op">/</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Exponential Distribution&quot;</span>)</code></pre></div>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p>Exponential R Commands</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -959,6 +1215,7 @@ X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</s
 Inv Exponential
 </h3>
 <p>
+<p>Inverse Exponential Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -985,7 +1242,8 @@ Inv Exponential
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">theta=<span class="dv">100</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dinvexp</span>(X,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inv Exponential Distribution&quot;</span>)</code></pre></div>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p>Inverse Exponential r Commands</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -1007,7 +1265,7 @@ X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</s
 </div>
 </div>
 <div id="other-distributions" class="section level2">
-<h2><span class="header-section-number">1.4</span> Other distributions</h2>
+<h2><span class="header-section-number">1.5</span> Other distributions</h2>
 </center>
 <div class="tab">
 <button class="tablinks" onclick="openTab(event, 'odA')">
@@ -1026,6 +1284,7 @@ Single-Parameter Pareto
 Lognormal
 </h3>
 <p>
+<p>Lognormal Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -1051,11 +1310,15 @@ Lognormal
 \end{matrix}
 }
 \]</span></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dlognorm=<span class="cf">function</span>(x,mu,sigma){
+  p=(<span class="dv">1</span><span class="op">/</span>(x<span class="op">*</span>sigma<span class="op">*</span><span class="kw">sqrt</span>(<span class="dv">2</span><span class="op">*</span>pi)))<span class="op">*</span><span class="kw">exp</span>(<span class="op">-</span>((<span class="kw">log</span>(x)<span class="op">-</span>mu)<span class="op">/</span>sigma)<span class="op">^</span><span class="dv">2</span>)
+  <span class="kw">return</span>(p)
+}</code></pre></div>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mu=<span class="dv">20</span>
 sigma=<span class="dv">12</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dlognorm</span>(X,<span class="dt">mu=</span>mu,<span class="dt">sigma=</span>sigma),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>)</code></pre></div>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
 </p>
 </div>
 <div id="odB" class="tabcontent">
@@ -1064,6 +1327,7 @@ X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</s
 Inv Gaussian
 </h3>
 <p>
+<p>Inverse Gaussian Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -1095,7 +1359,8 @@ Inv Gaussian
 theta=<span class="dv">1000</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">100</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dinvgauss</span>(X,<span class="dt">mean=</span>mu,<span class="dt">dispersion=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inv Gaussian Distribution&quot;</span>)</code></pre></div>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
+<p>Inverse Gaussian R Commands</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -1121,6 +1386,7 @@ X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</s
 Single Parameter Pareto
 </h3>
 <p>
+<p>Single Parameter Pareto Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -1150,7 +1416,8 @@ Single Parameter Pareto
 theta=<span class="dv">100</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dpareto1</span>(X,<span class="dt">shape=</span>alpha,<span class="dt">min=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Single Parameter Pareto Distribution&quot;</span>)</code></pre></div>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+<p>Single Parameter Pareto R Commands</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -1172,7 +1439,7 @@ X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</s
 </div>
 </div>
 <div id="distributions-with-finite-support" class="section level2">
-<h2><span class="header-section-number">1.5</span> Distributions with Finite Support</h2>
+<h2><span class="header-section-number">1.6</span> Distributions with Finite Support</h2>
 </center>
 <div class="tab">
 <button class="tablinks" onclick="openTab(event, 'fsA')">
@@ -1188,6 +1455,7 @@ Beta
 Generalized Beta
 </h3>
 <p>
+<p>Generalized Beta Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -1218,7 +1486,8 @@ tau=<span class="dv">2</span>
 theta=<span class="dv">1000</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">1000</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dgenbeta</span>(X,<span class="dt">shape1=</span>a,<span class="dt">shape2=</span>b,<span class="dt">shape3=</span>tau,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Generalized Beta Distribution&quot;</span>)</code></pre></div>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<p>Generalized Beta R Commmands</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -1244,6 +1513,7 @@ X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</s
 Beta
 </h3>
 <p>
+<p>Beta Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -1275,7 +1545,8 @@ b=<span class="dv">4</span>
 theta=<span class="dv">1</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">1</span>,<span class="dt">by=</span>.<span class="dv">0001</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dbeta</span>(X,<span class="dt">shape1=</span>a,<span class="dt">shape2=</span>b,<span class="dt">ncp=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Beta Distribution&quot;</span>)</code></pre></div>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<p>Beta R Commands</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -1297,7 +1568,7 @@ X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</s
 </div>
 </div>
 <div id="limited-expected-values" class="section level2">
-<h2><span class="header-section-number">1.6</span> Limited Expected Values</h2>
+<h2><span class="header-section-number">1.7</span> Limited Expected Values</h2>
 </center>
 <div class="tab">
 <button class="tablinks" onclick="openTab(event, 'levA')">
@@ -1313,6 +1584,7 @@ Graph
 Functions
 </h3>
 <p>
+<p>Limited Expected Value Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -1373,7 +1645,7 @@ Functions
 Graphs
 </h3>
 <p>
-<p><span class="math display">\[
+<p>Table of Limited Expected Values <span class="math display">\[
 {\small
 \begin{matrix}
 \begin{array}{l|c|c}
@@ -1394,7 +1666,7 @@ Graphs
 \end{matrix}
 }
 \]</span></p>
-<p><img src="LDASupplements_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+<p><img src="LDASupplements_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
 </p>
 </div>
 

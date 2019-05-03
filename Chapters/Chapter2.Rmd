@@ -24,6 +24,8 @@ require(actuar)
   <h3>Poisson</h3>
   <p>
 
+Poisson Functions
+
 $$
 {\small
 \begin{matrix}
@@ -52,6 +54,26 @@ $$
 }
 $$
 
+Poisson R Commands
+
+$$
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} & \text{dpois}(x=, lambda=\lambda) \\
+\hline
+  \text{Distribution Function} & \text{ppois}(p=, lambda=\lambda) \\
+\hline
+  \text{Quantile Function} & \text{qpois}(q=, lambda=\lambda) \\ 
+\hline
+  \text{Random Sampling Function} & \text{rpois}(n=, lambda=\lambda) \\
+\hline
+\end{array}
+\end{matrix}
+}
+$$
+
 </p>
 </div>
 
@@ -59,6 +81,8 @@ $$
   <span onclick="this.parentElement.style.display='none'" class="topright">Hide</span>
   <h3>Geometric</h3>
   <p>
+
+Geometric Functions
 
 $$
 {\small
@@ -88,6 +112,26 @@ $$
 }
 $$
 
+Geometric R Commands
+
+$$
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} & \text{dgeom}(x=, prob=\frac{1}{1+\beta}) \\
+\hline
+  \text{Distribution Function} & \text{pgeom}(p=, prob=\frac{1}{1+\beta}) \\
+\hline
+  \text{Quantile Function} & \text{qgeom}(q=, prob=\frac{1}{1+\beta}) \\ 
+\hline
+  \text{Random Sampling Function} & \text{rgeom}(n=, prob=\frac{1}{1+\beta}) \\
+\hline
+\end{array}
+\end{matrix}
+}
+$$
+
 </p>
 </div>
 
@@ -95,6 +139,8 @@ $$
   <span onclick="this.parentElement.style.display='none'" class="topright">Hide</span>
   <h3>Binomial</h3>
   <p>
+
+Binomial Functions
 
 $$
 {\small
@@ -127,6 +173,26 @@ $$
 }
 $$
 
+Binomial R Commands
+
+$$
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} & \text{dbinom}(x=, size=m, prob=p) \\
+\hline
+  \text{Distribution Function} & \text{pbinom}(p=, size=m, prob=p) \\
+\hline
+  \text{Quantile Function} & \text{qbinom}(q=, size=m, prob=p) \\ 
+\hline
+  \text{Random Sampling Function} & \text{rbinom}(n=, size=m, prob=p) \\
+\hline
+\end{array}
+\end{matrix}
+}
+$$
+
 </p>
 </div>
 
@@ -134,6 +200,8 @@ $$
   <span onclick="this.parentElement.style.display='none'" class="topright">Hide</span>
   <h3>Negative Binomial</h3>
   <p>
+
+Negative Binomial Functions
 
 $$
 {\small
@@ -163,6 +231,26 @@ $$
 }
 $$
 
+Negative Binomial R Commands
+
+$$
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} & \text{dnbinom}(x=, size=r, prob=\frac{1}{1+\beta}) \\
+\hline
+  \text{Distribution Function} & \text{pnbinom}(p=, size=r, prob=\frac{1}{1+\beta}) \\
+\hline
+  \text{Quantile Function} & \text{qnbinom}(q=, size=r, prob=\frac{1}{1+\beta}) \\ 
+\hline
+  \text{Random Sampling Function} & \text{rnbinom}(n=, size=r, prob=\frac{1}{1+\beta}) \\
+\hline
+\end{array}
+\end{matrix}
+}
+$$
+
 </p>
 </div>
 
@@ -182,6 +270,8 @@ $$
   <span onclick="this.parentElement.style.display='none'" class="topright">Hide</span>
   <h3>Zero Truncated Poisson</h3>
   <p>
+
+Zero Truncated Poisson Functions
 
 $$
 {\small
@@ -213,6 +303,26 @@ $$
 }
 $$
 
+Zero Truncated Poisson R Commands
+
+$$
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} & \text{dztpois}(x=, lambda=\lambda) \\
+\hline
+  \text{Distribution Function} & \text{pztpois}(p=, lambda=\lambda) \\
+\hline
+  \text{Quantile Function} & \text{qztpois}(q=, lambda=\lambda) \\ 
+\hline
+  \text{Random Sampling Function} & \text{rztpois}(n=, lambda=\lambda) \\
+\hline
+\end{array}
+\end{matrix}
+}
+$$
+
 </p>
 </div>
 
@@ -220,6 +330,8 @@ $$
   <span onclick="this.parentElement.style.display='none'" class="topright">Hide</span>
   <h3>Zero Truncated Geometric</h3>
   <p>
+
+Zero Truncated Geometric Functions
 
 $$
 {\small
@@ -251,6 +363,26 @@ $$
 }
 $$
 
+Zero Truncated Geometric R Commands
+
+$$
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} & \text{dztgeom}(x=, prob=\frac{1}{1+\beta}) \\
+\hline
+  \text{Distribution Function} & \text{pztgeom}(p=, prob=\frac{1}{1+\beta}) \\
+\hline
+  \text{Quantile Function} & \text{qztgeom}(q=, prob=\frac{1}{1+\beta}) \\ 
+\hline
+  \text{Random Sampling Function} & \text{rztgeom}(n=, prob=\frac{1}{1+\beta}) \\
+\hline
+\end{array}
+\end{matrix}
+}
+$$
+
 </p>
 </div>
 
@@ -258,6 +390,8 @@ $$
   <span onclick="this.parentElement.style.display='none'" class="topright">Hide</span>
   <h3>Zero Truncated Binomial</h3>
   <p>
+
+Zero Truncated Binomial Functions
 
 $$
 {\small
@@ -292,6 +426,26 @@ $$
 }
 $$
 
+Zero Truncated Binomial R Commmands
+
+$$
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} & \text{dztbinom}(x=, size=m, prob=p) \\
+\hline
+  \text{Distribution Function} & \text{pztbinom}(p=, size=m, prob=p) \\
+\hline
+  \text{Quantile Function} & \text{qztbinom}(q=, size=m, prob=p) \\ 
+\hline
+  \text{Random Sampling Function} & \text{rztbinom}(n=, size=m, prob=p) \\
+\hline
+\end{array}
+\end{matrix}
+}
+$$
+
 </p>
 </div>
 
@@ -299,6 +453,8 @@ $$
   <span onclick="this.parentElement.style.display='none'" class="topright">Hide</span>
   <h3>Zero Truncated Negative Binomial</h3>
   <p>
+
+Zero Truncated Negative Binomial Functions
 
 $$
 {\small
@@ -334,6 +490,26 @@ $$
 }
 $$
 
+Zero Truncated Negative Binomial R Commands
+
+$$
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} & \text{dztnbinom}(x=, size=r, prob=\frac{1}{1+\beta}) \\
+\hline
+  \text{Distribution Function} & \text{pztnbinom}(p=, size=r, prob=\frac{1}{1+\beta}) \\
+\hline
+  \text{Quantile Function} & \text{qztnbinom}(q=, size=r, prob=\frac{1}{1+\beta}) \\ 
+\hline
+  \text{Random Sampling Function} & \text{rztnbinom}(n=, size=r, prob=\frac{1}{1+\beta}) \\
+\hline
+\end{array}
+\end{matrix}
+}
+$$
+
 </p>
 </div>
 
@@ -341,6 +517,8 @@ $$
   <span onclick="this.parentElement.style.display='none'" class="topright">Hide</span>
   <h3>Logarithmic</h3>
   <p>
+
+Logarithmic Functions
 
 $$
 {\small
@@ -366,6 +544,26 @@ $$
 \hline
   \text{a and b for recursion} & a=\frac{\beta}{1+\beta} \\
    & b=\frac{-\beta}{1+\beta} \\
+\hline
+\end{array}
+\end{matrix}
+}
+$$
+
+Logarithmic R Commands
+
+$$
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} & \text{dnbinom}(x=,prob=\frac{\beta}{1+\beta}) \\
+\hline
+  \text{Distribution Function} & \text{pnbinom}(p=,prob=\frac{\beta}{1+\beta}) \\
+\hline
+  \text{Quantile Function} & \text{qnbinom}(q=,prob=\frac{\beta}{1+\beta}) \\ 
+\hline
+  \text{Random Sampling Function} & \text{rnbinom}(n=,prob=\frac{\beta}{1+\beta}) \\
 \hline
 \end{array}
 \end{matrix}

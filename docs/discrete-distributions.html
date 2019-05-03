@@ -25,7 +25,7 @@
 <meta name="author" content="Jake Thornton">
 
 
-<meta name="date" content="2019-04-26">
+<meta name="date" content="2019-05-03">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -220,12 +220,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
 <li class="chapter" data-level="1" data-path="continuous-distributions.html"><a href="continuous-distributions.html"><i class="fa fa-check"></i><b>1</b> Continuous Distributions</a><ul>
-<li class="chapter" data-level="1.1" data-path="continuous-distributions.html"><a href="continuous-distributions.html#three-parameter-distributions"><i class="fa fa-check"></i><b>1.1</b> Three Parameter Distributions</a></li>
-<li class="chapter" data-level="1.2" data-path="continuous-distributions.html"><a href="continuous-distributions.html#two-parameter-distributions"><i class="fa fa-check"></i><b>1.2</b> Two Parameter Distributions</a></li>
-<li class="chapter" data-level="1.3" data-path="continuous-distributions.html"><a href="continuous-distributions.html#one-parameter-distributions"><i class="fa fa-check"></i><b>1.3</b> One Parameter Distributions</a></li>
-<li class="chapter" data-level="1.4" data-path="continuous-distributions.html"><a href="continuous-distributions.html#other-distributions"><i class="fa fa-check"></i><b>1.4</b> Other distributions</a></li>
-<li class="chapter" data-level="1.5" data-path="continuous-distributions.html"><a href="continuous-distributions.html#distributions-with-finite-support"><i class="fa fa-check"></i><b>1.5</b> Distributions with Finite Support</a></li>
-<li class="chapter" data-level="1.6" data-path="continuous-distributions.html"><a href="continuous-distributions.html#limited-expected-values"><i class="fa fa-check"></i><b>1.6</b> Limited Expected Values</a></li>
+<li class="chapter" data-level="1.1" data-path="continuous-distributions.html"><a href="continuous-distributions.html#four-parameter-distributions"><i class="fa fa-check"></i><b>1.1</b> Four Parameter Distributions</a></li>
+<li class="chapter" data-level="1.2" data-path="continuous-distributions.html"><a href="continuous-distributions.html#three-parameter-distributions"><i class="fa fa-check"></i><b>1.2</b> Three Parameter Distributions</a></li>
+<li class="chapter" data-level="1.3" data-path="continuous-distributions.html"><a href="continuous-distributions.html#two-parameter-distributions"><i class="fa fa-check"></i><b>1.3</b> Two Parameter Distributions</a></li>
+<li class="chapter" data-level="1.4" data-path="continuous-distributions.html"><a href="continuous-distributions.html#one-parameter-distributions"><i class="fa fa-check"></i><b>1.4</b> One Parameter Distributions</a></li>
+<li class="chapter" data-level="1.5" data-path="continuous-distributions.html"><a href="continuous-distributions.html#other-distributions"><i class="fa fa-check"></i><b>1.5</b> Other distributions</a></li>
+<li class="chapter" data-level="1.6" data-path="continuous-distributions.html"><a href="continuous-distributions.html#distributions-with-finite-support"><i class="fa fa-check"></i><b>1.6</b> Distributions with Finite Support</a></li>
+<li class="chapter" data-level="1.7" data-path="continuous-distributions.html"><a href="continuous-distributions.html#limited-expected-values"><i class="fa fa-check"></i><b>1.7</b> Limited Expected Values</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="discrete-distributions.html"><a href="discrete-distributions.html"><i class="fa fa-check"></i><b>2</b> Discrete Distributions</a><ul>
 <li class="chapter" data-level="2.1" data-path="discrete-distributions.html"><a href="discrete-distributions.html#ab0-class-distributions"><i class="fa fa-check"></i><b>2.1</b> (a,b,0) Class Distributions</a></li>
@@ -278,6 +279,7 @@ Negative Binomial
 Poisson
 </h3>
 <p>
+<p>Poisson Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -305,6 +307,24 @@ Poisson
 \end{matrix}
 }
 \]</span></p>
+<p>Poisson R Commands</p>
+<p><span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} &amp; \text{dpois}(x=, lambda=\lambda) \\
+\hline
+  \text{Distribution Function} &amp; \text{ppois}(p=, lambda=\lambda) \\
+\hline
+  \text{Quantile Function} &amp; \text{qpois}(q=, lambda=\lambda) \\ 
+\hline
+  \text{Random Sampling Function} &amp; \text{rpois}(n=, lambda=\lambda) \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]</span></p>
 </p>
 </div>
 <div id="disB" class="tabcontent">
@@ -313,6 +333,7 @@ Poisson
 Geometric
 </h3>
 <p>
+<p>Geometric Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -340,6 +361,24 @@ Geometric
 \end{matrix}
 }
 \]</span></p>
+<p>Geometric R Commands</p>
+<p><span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} &amp; \text{dgeom}(x=, prob=\frac{1}{1+\beta}) \\
+\hline
+  \text{Distribution Function} &amp; \text{pgeom}(p=, prob=\frac{1}{1+\beta}) \\
+\hline
+  \text{Quantile Function} &amp; \text{qgeom}(q=, prob=\frac{1}{1+\beta}) \\ 
+\hline
+  \text{Random Sampling Function} &amp; \text{rgeom}(n=, prob=\frac{1}{1+\beta}) \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]</span></p>
 </p>
 </div>
 <div id="disC" class="tabcontent">
@@ -348,6 +387,7 @@ Geometric
 Binomial
 </h3>
 <p>
+<p>Binomial Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -378,6 +418,24 @@ Binomial
 \end{matrix}
 }
 \]</span></p>
+<p>Binomial R Commands</p>
+<p><span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} &amp; \text{dbinom}(x=, size=m, prob=p) \\
+\hline
+  \text{Distribution Function} &amp; \text{pbinom}(p=, size=m, prob=p) \\
+\hline
+  \text{Quantile Function} &amp; \text{qbinom}(q=, size=m, prob=p) \\ 
+\hline
+  \text{Random Sampling Function} &amp; \text{rbinom}(n=, size=m, prob=p) \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]</span></p>
 </p>
 </div>
 <div id="disD" class="tabcontent">
@@ -386,6 +444,7 @@ Binomial
 Negative Binomial
 </h3>
 <p>
+<p>Negative Binomial Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -408,6 +467,24 @@ Negative Binomial
   \hline
   \text{a and b for recursion} &amp; a=\frac{\beta}{1+\beta} \\
    &amp; b=\frac{(r-1)\beta}{1+\beta} \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]</span></p>
+<p>Negative Binomial R Commands</p>
+<p><span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} &amp; \text{dnbinom}(x=, size=r, prob=\frac{1}{1+\beta}) \\
+\hline
+  \text{Distribution Function} &amp; \text{pnbinom}(p=, size=r, prob=\frac{1}{1+\beta}) \\
+\hline
+  \text{Quantile Function} &amp; \text{qnbinom}(q=, size=r, prob=\frac{1}{1+\beta}) \\ 
+\hline
+  \text{Random Sampling Function} &amp; \text{rnbinom}(n=, size=r, prob=\frac{1}{1+\beta}) \\
 \hline
 \end{array}
 \end{matrix}
@@ -442,6 +519,7 @@ Logarithmic
 Zero Truncated Poisson
 </h3>
 <p>
+<p>Zero Truncated Poisson Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -471,6 +549,24 @@ Zero Truncated Poisson
 \end{matrix}
 }
 \]</span></p>
+<p>Zero Truncated Poisson R Commands</p>
+<p><span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} &amp; \text{dztpois}(x=, lambda=\lambda) \\
+\hline
+  \text{Distribution Function} &amp; \text{pztpois}(p=, lambda=\lambda) \\
+\hline
+  \text{Quantile Function} &amp; \text{qztpois}(q=, lambda=\lambda) \\ 
+\hline
+  \text{Random Sampling Function} &amp; \text{rztpois}(n=, lambda=\lambda) \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]</span></p>
 </p>
 </div>
 <div id="ztB" class="tabcontent">
@@ -479,6 +575,7 @@ Zero Truncated Poisson
 Zero Truncated Geometric
 </h3>
 <p>
+<p>Zero Truncated Geometric Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -508,6 +605,24 @@ Zero Truncated Geometric
 \end{matrix}
 }
 \]</span></p>
+<p>Zero Truncated Geometric R Commands</p>
+<p><span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} &amp; \text{dztgeom}(x=, prob=\frac{1}{1+\beta}) \\
+\hline
+  \text{Distribution Function} &amp; \text{pztgeom}(p=, prob=\frac{1}{1+\beta}) \\
+\hline
+  \text{Quantile Function} &amp; \text{qztgeom}(q=, prob=\frac{1}{1+\beta}) \\ 
+\hline
+  \text{Random Sampling Function} &amp; \text{rztgeom}(n=, prob=\frac{1}{1+\beta}) \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]</span></p>
 </p>
 </div>
 <div id="ztC" class="tabcontent">
@@ -516,6 +631,7 @@ Zero Truncated Geometric
 Zero Truncated Binomial
 </h3>
 <p>
+<p>Zero Truncated Binomial Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -548,6 +664,24 @@ Zero Truncated Binomial
 \end{matrix}
 }
 \]</span></p>
+<p>Zero Truncated Binomial R Commmands</p>
+<p><span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} &amp; \text{dztbinom}(x=, size=m, prob=p) \\
+\hline
+  \text{Distribution Function} &amp; \text{pztbinom}(p=, size=m, prob=p) \\
+\hline
+  \text{Quantile Function} &amp; \text{qztbinom}(q=, size=m, prob=p) \\ 
+\hline
+  \text{Random Sampling Function} &amp; \text{rztbinom}(n=, size=m, prob=p) \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]</span></p>
 </p>
 </div>
 <div id="ztD" class="tabcontent">
@@ -556,6 +690,7 @@ Zero Truncated Binomial
 Zero Truncated Negative Binomial
 </h3>
 <p>
+<p>Zero Truncated Negative Binomial Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -589,6 +724,24 @@ Zero Truncated Negative Binomial
 \end{matrix}
 }
 \]</span></p>
+<p>Zero Truncated Negative Binomial R Commands</p>
+<p><span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} &amp; \text{dztnbinom}(x=, size=r, prob=\frac{1}{1+\beta}) \\
+\hline
+  \text{Distribution Function} &amp; \text{pztnbinom}(p=, size=r, prob=\frac{1}{1+\beta}) \\
+\hline
+  \text{Quantile Function} &amp; \text{qztnbinom}(q=, size=r, prob=\frac{1}{1+\beta}) \\ 
+\hline
+  \text{Random Sampling Function} &amp; \text{rztnbinom}(n=, size=r, prob=\frac{1}{1+\beta}) \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]</span></p>
 </p>
 </div>
 <div id="ztE" class="tabcontent">
@@ -597,6 +750,7 @@ Zero Truncated Negative Binomial
 Logarithmic
 </h3>
 <p>
+<p>Logarithmic Functions</p>
 <p><span class="math display">\[
 {\small
 \begin{matrix}
@@ -621,6 +775,24 @@ Logarithmic
 \hline
   \text{a and b for recursion} &amp; a=\frac{\beta}{1+\beta} \\
    &amp; b=\frac{-\beta}{1+\beta} \\
+\hline
+\end{array}
+\end{matrix}
+}
+\]</span></p>
+<p>Logarithmic R Commands</p>
+<p><span class="math display">\[
+{\small
+\begin{matrix}
+\begin{array}{l|c}
+\hline
+  \text{Density Function} &amp; \text{dnbinom}(x=,prob=\frac{\beta}{1+\beta}) \\
+\hline
+  \text{Distribution Function} &amp; \text{pnbinom}(p=,prob=\frac{\beta}{1+\beta}) \\
+\hline
+  \text{Quantile Function} &amp; \text{qnbinom}(q=,prob=\frac{\beta}{1+\beta}) \\ 
+\hline
+  \text{Random Sampling Function} &amp; \text{rnbinom}(n=,prob=\frac{\beta}{1+\beta}) \\
 \hline
 \end{array}
 \end{matrix}
