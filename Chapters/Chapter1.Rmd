@@ -644,29 +644,29 @@ $$
 \hline
   \text{Name} & \text{Function} \\
 \hline
-  \text{Parameter Assumptions} & x>0,\alpha>0,\tau>0 \\
+  \text{Parameter Assumptions} & x>0,\alpha>0 \\
 \hline\
-  \text{Probability Density Function} & \frac{\tau \Big(\frac{x}{\theta}\Big)^\tau e^-\Big(\frac{x}{\theta}\Big)^\tau}{x} \\
+  \text{Probability Density Function} & \frac{\alpha \Big(\frac{x}{\theta}\Big)^\alpha e^-\Big(\frac{x}{\theta}\Big)^\alpha}{x} \\
     \text{f(x)} & \\
 \hline
-  \text{Cumulative Distribution Function} & 1-\exp\Big(-\Big(\frac{x}{\theta}\Big)^\tau\Big) \\
+  \text{Cumulative Distribution Function} & 1-\exp\Big(-\Big(\frac{x}{\theta}\Big)^\alpha\Big) \\
     \text{F(x)} & \\
 \hline
-  \textit{k}^{th}~\text{Raw Moment} & \theta^k \Gamma(1 + \frac{k}{\tau}) \\
-  \mathrm{E}[X^k]  & k>-\tau \\
+  \textit{k}^{th}~\text{Raw Moment} & \theta^k \Gamma(1 + \frac{k}{\alpha}) \\
+  \mathrm{E}[X^k]  & k>-\alpha \\
 \hline
-  \mathrm{E}[(X\wedge x)^k] & \theta^k\Gamma(1+\frac{k}{\tau})\Gamma\Big[1+\frac{k}{\tau};\Big(\frac{x}{\theta}\Big)^\tau\Big]+x^k\exp\Big(-\Big(\frac{x}{\tau}\Big)^\tau\Big)  \\
-   & k>-\tau \\
+  \mathrm{E}[(X\wedge x)^k] & \theta^k\Gamma(1+\frac{k}{\alpha})\Gamma\Big[1+\frac{k}{\alpha};\Big(\frac{x}{\theta}\Big)^\alpha\Big]+x^k\exp\Big(-\Big(\frac{x}{\alpha}\Big)^\alpha\Big)  \\
+   & k>-\alpha \\
 \hline
 \end{array}
 \end{matrix}
 }
 $$
 ```{r}
-tau=2
+alpha=2
 theta=100
 X=seq(from=0,to=1000,by=1)
-plot(x=X,y=dweibull(X,shape=tau, scale=theta),type="l",ylab="Probability density",col="red",main="Weibull Distribution")
+plot(x=X,y=dweibull(X,shape=alpha, scale=theta),type="l",ylab="Probability density",col="red",main="Weibull Distribution")
 ```
 
 Weibull R Commands
@@ -676,13 +676,13 @@ $$
 \begin{matrix}
 \begin{array}{l|c}
 \hline
-  \text{Density Function} & \text{dweibull}(x=, shape=\tau, scale=\theta) \\
+  \text{Density Function} & \text{dweibull}(x=, shape=\alpha, scale=\theta) \\
 \hline
-  \text{Distribution Function} & \text{pweibull}(p=, shape=\tau,scale=\theta) \\
+  \text{Distribution Function} & \text{pweibull}(p=, shape=\alpha,scale=\theta) \\
 \hline
-  \text{Quantile Function} & \text{qweibull}(q=, shape=\tau,scale=\theta) \\ 
+  \text{Quantile Function} & \text{qweibull}(q=, shape=\alpha,scale=\theta) \\ 
 \hline
-  \text{Random Sampling Function} & \text{rweibull}(n=, shape=\tau,scale=\theta) \\
+  \text{Random Sampling Function} & \text{rweibull}(n=, shape=\alpha,scale=\theta) \\
 \hline
 \end{array}
 \end{matrix}
@@ -706,18 +706,18 @@ $$
 \hline
   \text{Name} & \text{Function} \\
 \hline
-  \text{Parameter Assumptions} & x>0,\alpha>0,\tau>0 \\
+  \text{Parameter Assumptions} & x>0,\alpha>0 \\
 \hline\
-  \text{Probability Density Function} & \frac{\tau(\theta/x)^\tau \exp^{-(\theta/x)^\tau}}{x} \\
+  \text{Probability Density Function} & \frac{\alpha(\theta/x)^\alpha \exp^{-(\theta/x)^\alpha}}{x} \\
     \text{f(x)} & \\
 \hline
-  \text{Cumulative Distribution Function} & \exp\Big(-\Big(\frac{\theta}{x}\Big)^\tau\Big) \\
+  \text{Cumulative Distribution Function} & \exp\Big(-\Big(\frac{\theta}{x}\Big)^\alpha\Big) \\
     \text{F(x)} & \\
 \hline
- \textit{k}^{th}~\text{Raw Moment} & \theta^k\Gamma(1-(k/\tau)) \\
-  \mathrm{E}[X^k]  & k<\tau \\
+ \textit{k}^{th}~\text{Raw Moment} & \theta^k\Gamma(1-(k/\alpha)) \\
+  \mathrm{E}[X^k]  & k<\alpha \\
 \hline
-  \mathrm{E}[(X\wedge x)^k] & \theta^k\Gamma(1-(k/\tau))[1-\Gamma(1(k/\tau);(\theta/x)^\tau)]+x^k[1-e^{-(\theta/x)^\tau}] \\
+  \mathrm{E}[(X\wedge x)^k] & \theta^k\Gamma(1-(k/\alpha))[1-\Gamma(1(k/\alpha);(\theta/x)^\alpha)]+x^k[1-e^{-(\theta/x)^\alpha}] \\
   &  \\
 \hline
 \end{array}
@@ -725,10 +725,10 @@ $$
 }
 $$
 ```{r}
-tau=5
+alpha=5
 theta=100
 X=seq(from=0,to=1000,by=1)
-plot(x=X,y=dinvweibull(X,shape=tau,scale=theta),type="l",ylab="Probability density",col="red",main="Inv Weibull Distribution")
+plot(x=X,y=dinvweibull(X,shape=alpha,scale=theta),type="l",ylab="Probability density",col="red",main="Inv Weibull Distribution")
 ```
 
 Inverse Weibull R Commands
@@ -738,13 +738,13 @@ $$
 \begin{matrix}
 \begin{array}{l|c}
 \hline
-  \text{Density Function} & \text{dinvweibull}(x=, shape=\tau, scale=\theta) \\
+  \text{Density Function} & \text{dinvweibull}(x=, shape=\alpha, scale=\theta) \\
 \hline
-  \text{Distribution Function} & \text{pinvweibull}(p=, shape=\tau,scale=\theta) \\
+  \text{Distribution Function} & \text{pinvweibull}(p=, shape=\alpha,scale=\theta) \\
 \hline
-  \text{Quantile Function} & \text{qinvweibull}(q=, shape=\tau,scale=\theta) \\ 
+  \text{Quantile Function} & \text{qinvweibull}(q=, shape=\alpha,scale=\theta) \\ 
 \hline
-  \text{Random Sampling Function} & \text{rinvweibull}(n=, shape=\tau,scale=\theta) \\
+  \text{Random Sampling Function} & \text{rinvweibull}(n=, shape=\alpha,scale=\theta) \\
 \hline
 \end{array}
 \end{matrix}
