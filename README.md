@@ -1,6 +1,7 @@
 # LDA Table of Distributions
 
 This is the source code for https://thornton4.github.io/Table-Of-Distributions/.
+
 ## Making Changes
 * First, open up the issues tab on the Github repository.
 * Click on "create an issue".
