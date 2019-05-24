@@ -4,7 +4,7 @@
 
 This summarizes selected discrete probability distributions used throughout *Loss Data Analytics*.
 
-##(a,b,0) Class Distributions
+## The (a,b,0) Class 
 
 
 </center>
@@ -18,10 +18,10 @@ This summarizes selected discrete probability distributions used throughout *Los
 
 <div id="disA" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
-  <h3>Poisson</h3>
-  <p>
 
-**Poisson Functions**
+<h3>Poisson</h3>
+
+**Functions**
 
 $$
 \begin{matrix}
@@ -49,7 +49,7 @@ $$
 \end{matrix}
 $$
 
-**Poisson `R` Commands**
+**`R` Commands**
 
 $$
 \begin{matrix}
@@ -74,10 +74,10 @@ $$
 
 <div id="disB" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
-  <h3>Geometric</h3>
-  <p>
 
-**Geometric Functions**
+<h3>Geometric</h3>
+
+**Functions**
 
 $$
 \begin{matrix}
@@ -105,7 +105,7 @@ $$
 \end{matrix}
 $$
 
-**Geometric `R` Commands**
+**`R` Commands**
 
 $$
 \begin{matrix}
@@ -125,15 +125,14 @@ $$
 \end{matrix}
 $$
 
-</p>
 </div>
 
 <div id="disC" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
-  <h3>Binomial</h3>
-  <p>
 
-**Binomial Functions**
+<h3>Binomial</h3>
+
+**Functions**
 
 $$
 \begin{matrix}
@@ -164,7 +163,7 @@ $$
 \end{matrix}
 $$
 
-**Binomial `R` Commands**
+**`R` Commands**
 
 $$
 \begin{matrix}
@@ -184,15 +183,14 @@ $$
 \end{matrix}
 $$
 
-</p>
 </div>
 
 <div id="disD" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
-  <h3>Negative Binomial</h3>
-  <p>
 
-**Negative Binomial Functions**
+<h3>Negative Binomial</h3>
+
+**Functions**
 
 $$
 \begin{matrix}
@@ -220,7 +218,7 @@ $$
 \end{matrix}
 $$
 
-**Negative Binomial `R` Commands**
+**`R` Commands**
 
 $$
 \begin{matrix}
@@ -240,10 +238,9 @@ $$
 \end{matrix}
 $$
 
-</p>
 </div>
 
-## (a,b,1) Class Distributions - Zero Truncated
+## The (a,b,1) Class
 
 </center>
 
@@ -257,10 +254,10 @@ $$
 
 <div id="ztA" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
-  <h3>Zero Truncated Poisson</h3>
-  <p>
 
-**Zero Truncated Poisson Functions**
+<h3>Zero Truncated Poisson</h3>
+
+**Functions**
 
 $$
 \begin{matrix}
@@ -290,7 +287,7 @@ $$
 \end{matrix}
 $$
 
-**Zero Truncated Poisson `R` Commands**
+**`R` Commands**
 
 $$
 \begin{matrix}
@@ -310,15 +307,15 @@ $$
 \end{matrix}
 $$
 
-</p>
+
 </div>
 
 <div id="ztB" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
-  <h3>Zero Truncated Geometric</h3>
-  <p>
 
-**Zero Truncated Geometric Functions**
+<h3>Zero Truncated Geometric</h3>
+
+**Functions**
 
 $$
 \begin{matrix}
@@ -348,7 +345,7 @@ $$
 \end{matrix}
 $$
 
-**Zero Truncated Geometric `R` Commands**
+**`R` Commands**
 
 $$
 \begin{matrix}
@@ -368,15 +365,14 @@ $$
 \end{matrix}
 $$
 
-</p>
 </div>
 
 <div id="ztC" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
-  <h3>Zero Truncated Binomial</h3>
-  <p>
 
-**Zero Truncated Binomial Functions**
+<h3>Zero Truncated Binomial</h3>
+
+**Functions**
 
 $$
 \begin{matrix}
@@ -409,7 +405,7 @@ $$
 \end{matrix}
 $$
 
-**Zero Truncated Binomial `R` Commmands**
+**`R` Commmands**
 
 $$
 \begin{matrix}
@@ -429,15 +425,15 @@ $$
 \end{matrix}
 $$
 
-</p>
+
 </div>
 
 <div id="ztD" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
-  <h3>Zero Truncated Negative Binomial</h3>
-  <p>
 
-**Zero Truncated Negative Binomial Functions**
+<h3>Zero Truncated Negative Binomial</h3>
+
+**Functions**
 
 $$
 \begin{matrix}
@@ -471,7 +467,7 @@ $$
 \end{matrix}
 $$
 
-**Zero Truncated Negative Binomial `R` Commands**
+**`R` Commands**
 
 $$
 \begin{matrix}
@@ -491,15 +487,14 @@ $$
 \end{matrix}
 $$
 
-</p>
 </div>
 
 <div id="ztE" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
-  <h3>Logarithmic</h3>
-  <p>
 
-**Logarithmic Functions**
+<h3>Logarithmic</h3>
+
+**Functions**
 
 $$
 \begin{matrix}
@@ -529,7 +524,7 @@ $$
 \end{matrix}
 $$
 
-**Logarithmic `R` Commands**
+**`R` Commands**
 
 $$
 \begin{matrix}
@@ -549,5 +544,4 @@ $$
 \end{matrix}
 $$
 
-</p>
 </div>

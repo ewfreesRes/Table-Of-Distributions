@@ -1,6 +1,6 @@
-# LDA Table of Distributions
+# LDA Distribution Summary
 
-This is the source code for https://ewfreewres.github.io/Table-Of-Distributions/.
+This is the source code for https://ewfreesres.github.io/Table-Of-Distributions/.
 
 ## Making Changes
 * First, open up the issues tab on the Github repository.

@@ -15,9 +15,9 @@ bookdown::gitbook:
     toc:
       collapse: section
       before: |
-        <li><a href="./">Table of Distributions for LDA</a></li>
+        <li><a href="./">Summary of Distributions</a></li>
       after: |
-        <li><a href="https://github.com/ewfreesRes/Table-Of-Distributions" target="blank">LDA Table of Distributions</a></li>
+        <li><a href="https://github.com/ewfreesRes/Table-Of-Distributions" target="blank">Summary of Distributions</a></li>
     edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
     download: null
     sharing:
@@ -31,6 +31,7 @@ bookdown::gitbook:
       all: ['facebook', 'google', 'twitter', 'linkedin', 'weibo', 'instapaper']
 bookdown::html_document2:
   theme: default
+  code_folding: hide
   toc: yes
   toc_float:
     collapsed: true

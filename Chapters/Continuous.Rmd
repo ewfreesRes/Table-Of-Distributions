@@ -1289,16 +1289,12 @@ plot(x=X,y=dpareto1(X,shape=alpha,min=theta),type="l",
 </center>
 
 <div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'fsB')">Beta</button>
-  <button class="tablinks" onclick="openTab(event, 'fsA')">General Beta</button>
+  <button class="tablinks" onclick="openTab(event, 'fsA')">Beta</button>
+  <button class="tablinks" onclick="openTab(event, 'fsB')">General Beta</button>
 </div>
 
+
 <div id="fsA" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
-
-
-
-<div id="fsB" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
 
 <h3>Beta</h3>
@@ -1362,6 +1358,10 @@ plot(x=X,y=dbeta(X,shape1=a,shape2=b,ncp=theta),type="l",
 
 
 </div>
+
+<div id="fsB" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
+
 <h3>Generalized Beta</h3>
 
 **Functions**
@@ -1423,7 +1423,7 @@ plot(x=X,y=dgenbeta(X,shape1=a,shape2=b,shape3=tau,scale=theta),type="l",
 
 </div>
 
-## Limited Expected Values
+# Limited Expected Values for Continuous Distributions
 
 </center>
 
@@ -1441,7 +1441,6 @@ plot(x=X,y=dgenbeta(X,shape1=a,shape2=b,shape3=tau,scale=theta),type="l",
 **Limited Expected Value Functions**
 
 $$
-{\small
 \begin{matrix}
 \begin{array}{l|c}
 \hline
@@ -1490,22 +1489,19 @@ $$
 \hline
 \end{array}
 \end{matrix}
-}
 $$
 
-</p>
 </div>
 
 
 <div id="levB" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
-  <h3>Graphs</h3>
-  <p>
+
+<h3>Illustrative Graph</h3>
 
 **Table of Limited Expected Values**
 
 $$
-{\small
 \begin{matrix}
 \begin{array}{l|c|c}
 \hline
@@ -1523,17 +1519,14 @@ $$
 \hline
 \end{array}
 \end{matrix}
-}
 $$
 
-```{r eval=TRUE, include=FALSE}
-require(actuar)
-```
+
 
 ```{r eval=TRUE,  echo=FALSE}
 X=1:1000
 plot(x=X,y=levpareto2(X,3,200),col="red",type="l",xlab="x values", 
-     ylab="Limited Expected Value",main="Limted Expected Values for Distributions with the same Expected Value")
+     ylab="Limited Expected Value",main="Limted Expected Values for Several Distributions")
 lines(x=X,y=levexp(X,rate=1/100),col="blue")
 lines(x=X,y=levgamma(X,shape=2,scale=50),col="green")
 lines(x=X,y=levweibull(X,shape=2,scale=100/gamma(1.5)),col="orange")
@@ -1541,7 +1534,6 @@ lines(x=X,y=levgenpareto(X,shape1=3,shape2=2,scale=100),col="purple")
 legend("bottomright",legend=c("Pareto","Exponential","Gamma","Weibull","GB2"),lty=c(1,1,1,1,1),col=c("red","blue","green","orange","purple"))
 ```
 
-</p>
 </div>
 
 
