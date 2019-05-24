@@ -1,13 +1,13 @@
 --- 
 title: "Table of Distributions for LDA"
-author: "Jake Thornton"
+author: "Actuarial Community"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "Table of distributions for the Loss Data Analytics online text."
+description: "Table of distributions for Loss Data Analytics"
 ---
 
 #Preface {-}
