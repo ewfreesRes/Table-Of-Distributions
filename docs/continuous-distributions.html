@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Continuous Distributions | Summary of Distributions</title>
-  <meta name="description" content="Summary of distributions for Loss Data Analytics">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="Summary of distributions for Loss Data Analytics" />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Continuous Distributions | Summary of Distributions" />
   <meta property="og:type" content="book" />
@@ -22,18 +21,18 @@
   <meta name="twitter:description" content="Summary of distributions for Loss Data Analytics" />
   
 
-<meta name="author" content="An open text authored by the Actuarial Community">
+<meta name="author" content="An open text authored by the Actuarial Community" />
 
 
-<meta name="date" content="2019-05-24">
+<meta name="date" content="2019-05-24" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
 <link rel="prev" href="discrete-distributions.html">
-<link rel="next" href="limited-expected-values-for-continuous-distributions.html">
+<link rel="next" href="limited-expected-values.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -232,7 +231,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.5" data-path="continuous-distributions.html"><a href="continuous-distributions.html#other-distributions"><i class="fa fa-check"></i><b>2.5</b> Other Distributions</a></li>
 <li class="chapter" data-level="2.6" data-path="continuous-distributions.html"><a href="continuous-distributions.html#distributions-with-finite-support"><i class="fa fa-check"></i><b>2.6</b> Distributions with Finite Support</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="limited-expected-values-for-continuous-distributions.html"><a href="limited-expected-values-for-continuous-distributions.html"><i class="fa fa-check"></i><b>3</b> Limited Expected Values for Continuous Distributions</a></li>
+<li class="chapter" data-level="3" data-path="limited-expected-values.html"><a href="limited-expected-values.html"><i class="fa fa-check"></i><b>3</b> Limited Expected Values</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/ewfreesRes/Table-Of-Distributions" target="blank">Summary of Distributions</a></li>
 
@@ -255,8 +254,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="continuous-distributions" class="section level1">
 <h1><span class="header-section-number">2</span> Continuous Distributions</h1>
-<p><strong>Preview</strong></p>
-<p>This summarizes selected continuous probability distributions used throughout <em>Loss Data Analytics</em>.</p>
+<p><strong>Overview.</strong> This section summarizes selected continuous probability distributions used throughout <em>Loss Data Analytics</em>. Relevant functions, <code>R</code> code, and illustrative graphs are provided.</p>
 <div id="one-parameter-distributions" class="section level2">
 <h2><span class="header-section-number">2.1</span> One Parameter Distributions</h2>
 <div class="tab">
@@ -272,7 +270,7 @@ Inv Exponential
 <button>
 Hide
 </button>
-</span>
+<p></span></p>
 <h3>
 Exponential
 </h3>
@@ -334,7 +332,7 @@ Hide
 </button>
 <p></span></p>
 <h3>
-Inv Exponential
+Inverse Exponential
 </h3>
 <p><strong>Functions</strong></p>
 <p><span class="math display">\[
@@ -380,7 +378,7 @@ Inv Exponential
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">theta =<span class="st"> </span><span class="dv">100</span>
 X=<span class="kw">seq</span>(<span class="dt">from =</span> <span class="dv">0</span>, <span class="dt">to =</span> <span class="dv">1000</span>, <span class="dt">by =</span> <span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dinvexp</span>(X,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,
-     <span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inv Exponential Distribution&quot;</span>)</code></pre></div>
+     <span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inverse Exponential Distribution&quot;</span>)</code></pre></div>
 <p><img src="DistributionSummary_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 </div>
 </div>
@@ -489,7 +487,7 @@ Hide
 </button>
 <p></span></p>
 <h3>
-Inv Pareto
+Inverse Pareto
 </h3>
 <p><strong>Functions</strong></p>
 <p><span class="math display">\[
@@ -517,7 +515,7 @@ Inv Pareto
 theta =<span class="st"> </span><span class="dv">100</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">3000</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dinvpareto</span>(X,<span class="dt">shape=</span>tau,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,
-     <span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inv Pareto Distribution&quot;</span>)</code></pre></div>
+     <span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inverse Pareto Distribution&quot;</span>)</code></pre></div>
 <p><img src="DistributionSummary_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 <p><strong><code>R</code> Commands</strong></p>
 <p><span class="math display">\[
@@ -744,7 +742,7 @@ Inverse Gamma
 theta =<span class="st"> </span><span class="dv">100</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">400</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dinvgamma</span>(X,<span class="dt">shape=</span>alpha,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,
-     <span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inv Gamma Distribution&quot;</span>)</code></pre></div>
+     <span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inverse Gamma Distribution&quot;</span>)</code></pre></div>
 <p><img src="DistributionSummary_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 </div>
 <div id="2pG" class="tabcontent">
@@ -813,7 +811,7 @@ Hide
 </button>
 <p></span></p>
 <h3>
-Inv Weibull
+Inverse Weibull
 </h3>
 <p><strong>Functions</strong></p>
 <p><span class="math display">\[
@@ -862,7 +860,7 @@ Inv Weibull
 theta =<span class="st"> </span><span class="dv">100</span>
 X=<span class="kw">seq</span>(<span class="dt">from =</span> <span class="dv">0</span>, <span class="dt">to =</span> <span class="dv">1000</span>, <span class="dt">by =</span> <span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dinvweibull</span>(X,<span class="dt">shape=</span>alpha,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,
-     <span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inv Weibull Distribution&quot;</span>)</code></pre></div>
+     <span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inverse Weibull Distribution&quot;</span>)</code></pre></div>
 <p><img src="DistributionSummary_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 </div>
 <div id="2pI" class="tabcontent">
@@ -1180,7 +1178,7 @@ Hide
 </button>
 <p></span></p>
 <h3>
-Inv Burr
+Inverse Burr
 </h3>
 <p><strong>Functions</strong></p>
 <p><span class="math display">\[
@@ -1230,7 +1228,7 @@ tau=<span class="dv">3</span>
 theta =<span class="st"> </span><span class="dv">100</span>
 X=<span class="kw">seq</span>(<span class="dt">from =</span> <span class="dv">0</span>, <span class="dt">to =</span> <span class="dv">1000</span>, <span class="dt">by =</span> <span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dinvburr</span>(X,<span class="dt">shape1=</span>alpha,<span class="dt">shape2=</span>tau,<span class="dt">scale=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,
-     <span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inv Burr Distribution&quot;</span>)</code></pre></div>
+     <span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inverse Burr Distribution&quot;</span>)</code></pre></div>
 <p><img src="DistributionSummary_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
 </div>
 </div>
@@ -1406,7 +1404,7 @@ Inverse Gaussian
 theta =<span class="st"> </span><span class="dv">1000</span>
 X=<span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">0</span>,<span class="dt">to=</span><span class="dv">100</span>,<span class="dt">by=</span><span class="dv">1</span>)
 <span class="kw">plot</span>(<span class="dt">x=</span>X,<span class="dt">y=</span><span class="kw">dinvgauss</span>(X,<span class="dt">mean=</span>mu,<span class="dt">dispersion=</span>theta),<span class="dt">type=</span><span class="st">&quot;l&quot;</span>,
-     <span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inv Gaussian Distribution&quot;</span>)</code></pre></div>
+     <span class="dt">ylab=</span><span class="st">&quot;Probability density&quot;</span>,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Inverse Gaussian Distribution&quot;</span>)</code></pre></div>
 <p><img src="DistributionSummary_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
 </div>
 <div id="odC" class="tabcontent">
@@ -1608,7 +1606,7 @@ X=<span class="kw">seq</span>(<span class="dt">from =</span> <span class="dv">0<
         </div>
       </div>
 <a href="discrete-distributions.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="limited-expected-values-for-continuous-distributions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="limited-expected-values.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

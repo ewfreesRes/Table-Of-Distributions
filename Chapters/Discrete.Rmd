@@ -1,13 +1,9 @@
 # Discrete Distributions
 
-**Preview**
-
-This summarizes selected discrete probability distributions used throughout *Loss Data Analytics*.
+**Overview.** This section summarizes selected discrete probability distributions used throughout *Loss Data Analytics*. Relevant functions and `R` code are provided.
 
 ## The (a,b,0) Class 
 
-
-</center>
 
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'disA')">Poisson</button>
@@ -69,7 +65,6 @@ $$
 \end{matrix}
 $$
 
-</p>
 </div>
 
 <div id="disB" class="tabcontent">

@@ -1,9 +1,7 @@
 # Continuous Distributions
 
 
-**Preview**
-
-This summarizes selected continuous probability distributions used throughout *Loss Data Analytics*.
+**Overview.** This section summarizes selected continuous probability distributions used throughout *Loss Data Analytics*. Relevant functions, `R` code, and illustrative graphs are provided.
 
 
 ## One Parameter Distributions
@@ -16,7 +14,8 @@ This summarizes selected continuous probability distributions used throughout *L
 
 <div id="1pA" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
-  <h3>Exponential</h3>
+
+<h3>Exponential</h3>
 
 **Functions**
 
@@ -80,7 +79,7 @@ plot(x=X,y=dexp(X,rate=1/theta),type="l",
 <div id="1pB" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
 
-<h3>Inv Exponential</h3>
+<h3>Inverse Exponential</h3>
 
 
 **Functions**
@@ -134,7 +133,7 @@ $$
 theta = 100
 X=seq(from = 0, to = 1000, by = 1)
 plot(x=X,y=dinvexp(X,scale=theta),type="l",
-     ylab="Probability density",col="red",main="Inv Exponential Distribution")
+     ylab="Probability density",col="red",main="Inverse Exponential Distribution")
 ```
 </div>
 
@@ -226,7 +225,7 @@ plot(x=X,y=dpareto2(X,shape=alpha,scale=theta),type="l",
 <div id="2pB" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
 
-<h3>Inv Pareto</h3>
+<h3>Inverse Pareto</h3>
 
 **Functions**
 
@@ -256,7 +255,7 @@ tau = 5
 theta = 100
 X=seq(from=0,to=3000,by=1)
 plot(x=X,y=dinvpareto(X,shape=tau,scale=theta),type="l",
-     ylab="Probability density",col="red",main="Inv Pareto Distribution")
+     ylab="Probability density",col="red",main="Inverse Pareto Distribution")
 ```
 
 **`R` Commands**
@@ -506,7 +505,7 @@ alpha = 3
 theta = 100
 X=seq(from=0,to=400,by=1)
 plot(x=X,y=dinvgamma(X,shape=alpha,scale=theta),type="l",
-     ylab="Probability density",col="red",main="Inv Gamma Distribution")
+     ylab="Probability density",col="red",main="Inverse Gamma Distribution")
 ```
 
 </div>
@@ -579,7 +578,7 @@ plot(x=X,y=dweibull(X,shape=alpha, scale=theta),type="l",
 <div id="2pH" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
 
-<h3>Inv Weibull</h3>
+<h3>Inverse Weibull</h3>
 
 **Functions**
 
@@ -634,7 +633,7 @@ alpha = 5
 theta = 100
 X=seq(from = 0, to = 1000, by = 1)
 plot(x=X,y=dinvweibull(X,shape=alpha,scale=theta),type="l",
-     ylab="Probability density",col="red",main="Inv Weibull Distribution")
+     ylab="Probability density",col="red",main="Inverse Weibull Distribution")
 ```
 
 </div>
@@ -973,7 +972,7 @@ plot(x=X,y=dburr(X,shape1=alpha,shape2=gamma,scale=theta),type="l",
 <div id="3pC" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright"><button>Hide</button></span>
 
-<h3>Inv Burr</h3>
+<h3>Inverse Burr</h3>
 
 **Functions**
 
@@ -1029,7 +1028,7 @@ tau=3
 theta = 100
 X=seq(from = 0, to = 1000, by = 1)
 plot(x=X,y=dinvburr(X,shape1=alpha,shape2=tau,scale=theta),type="l",
-     ylab="Probability density",col="red",main="Inv Burr Distribution")
+     ylab="Probability density",col="red",main="Inverse Burr Distribution")
 ```
 
 </div>
@@ -1215,7 +1214,7 @@ mu=100
 theta = 1000
 X=seq(from=0,to=100,by=1)
 plot(x=X,y=dinvgauss(X,mean=mu,dispersion=theta),type="l",
-     ylab="Probability density",col="red",main="Inv Gaussian Distribution")
+     ylab="Probability density",col="red",main="Inverse Gaussian Distribution")
 ```
 
 
@@ -1423,9 +1422,9 @@ plot(x=X,y=dgenbeta(X,shape1=a,shape2=b,shape3=tau,scale=theta),type="l",
 
 </div>
 
-# Limited Expected Values for Continuous Distributions
+# Limited Expected Values
 
-</center>
+**Overview.** This section summarizes limited expected values for selected continuous distributions.
 
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'levA')">Functions</button>
